@@ -9,7 +9,7 @@ public class CellingFan {
     String location;
     int speed;
 
-    public CellingFan(String location, int speed) {
+    public CellingFan(String location) {
         this.location = location;
         speed = OFF;
     }

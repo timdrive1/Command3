@@ -1,16 +1,16 @@
 /**
  * Created by student on 17.05.2017.
  */
-public class CellingFanHighCommand implements Command{
+public class CellingFanMediumCommand implements Command {
     CellingFan cellingFan;
     int prevSpeed;
-    public CellingFanHighCommand(CellingFan cellingFan){
+    public CellingFanMediumCommand(CellingFan cellingFan) {
         this.cellingFan = cellingFan;
     }
     @Override
     public void execute() {
         prevSpeed = cellingFan.getSpeed();
-        cellingFan.high();
+        cellingFan.medium();
     }
     public void undo(){
         if(prevSpeed == CellingFan.HIGH){
